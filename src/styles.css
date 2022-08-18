@@ -1,0 +1,53 @@
+.box-shadow {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  color: #543884;
+}
+
+.container-auth {
+}
+
+@media screen and (max-width: 450px) {
+  .container-auth {
+    width: 90% !important;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container-auth {
+    width: 60%;
+    max-width: 400px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbarHidden {
+    display: none !important;
+  }
+
+  .showNavbar {
+    display: flex !important;
+    position: absolute !important;
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-height: 100vh !important;
+  }
+}
+
+.container-layout {
+  min-height: 100vh;
+}
+
+.no-note {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.ItemList {
+  background: rgba(0, 0, 0, 0.15);
+  margin-bottom: 0.2rem;
+}
