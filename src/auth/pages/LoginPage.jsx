@@ -58,7 +58,7 @@ export const LoginPage = () => {
   }; */
 
   return (
-    <AuthLayout title="Login">
+    <AuthLayout title="Acceso">
       <form
         onSubmit={handleSubmit}
         className="animate__animated animate__fadeIn animate__faster"
@@ -69,7 +69,7 @@ export const LoginPage = () => {
               label="Email"
               type="email"
               name="email"
-              placeholder="Journal@gmail.com"
+              placeholder="lchirione@gmail.com"
               fullWidth
               value={email}
               onChange={onInputChange}
@@ -104,7 +104,7 @@ export const LoginPage = () => {
                 variant="contained"
                 fullWidth
               >
-                Login
+                Ingresar
               </Button>
             </Grid>
 
@@ -127,7 +127,7 @@ export const LoginPage = () => {
               to="/auth/register"
               sx={{ cursor: "pointer" }}
             >
-              Create an account
+              Crear usuario
             </Link>
           </Grid>
         </Grid>

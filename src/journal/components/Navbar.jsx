@@ -39,7 +39,7 @@ export const Navbar = ({ drawerWidth }) => {
           alignItems="center"
         >
           <Typography variant="h6" noWrap component="div">
-            JournalApp
+            NotesApp by Lucas Chirione
           </Typography>
 
           <IconButton onClick={onLogout}>

@@ -67,7 +67,7 @@ export const NoteView = () => {
       <Grid item>
         <Button onClick={onSaveNote} sx={{ color: "primary", p: 2 }}>
           <SaveOutlined sx={{ md: { fontSize: 35 }, mr: 1 }} />
-          Saved
+          Guardar
         </Button>
       </Grid>
 
@@ -77,7 +77,7 @@ export const NoteView = () => {
           variant="filled"
           fullWidth
           placeholder="Enter a title"
-          label="Title"
+          label="Titulo"
           name="title"
           value={title}
           onChange={onInputChange}
@@ -90,7 +90,7 @@ export const NoteView = () => {
           multiline
           fullWidth
           placeholder="What happened today?"
-          label="Description"
+          label="Descripcion"
           name="body"
           value={body}
           onChange={onInputChange}
@@ -102,7 +102,7 @@ export const NoteView = () => {
       <Grid container justifyContent="end">
         <Button onClick={onDelete} sx={{ mt: 2 }} color="error">
           <DeleteOutlined />
-          Delete
+          Borrar
         </Button>
       </Grid>
     </Grid>

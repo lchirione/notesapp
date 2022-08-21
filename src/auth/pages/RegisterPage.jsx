@@ -25,12 +25,12 @@ export const RegisterPage = () => {
   }, [status]);
 
   const formValidations = {
-    email: [(value) => value.includes("@"), "The email should include a @"],
+    email: [(value) => value.includes("@"), "El correo electrónico debe incluir el @"],
     password: [
       (value) => value.length >= 6,
-      "Password must contain 6 characters",
+      "La contraseña debe contener 6 caracteres",
     ],
-    displayName: [(value) => value.length >= 1, "Name is required"],
+    displayName: [(value) => value.length >= 1, "Se requiere el nombre"],
   };
 
   const handleInputChange = ({ target }) => {
@@ -56,7 +56,7 @@ export const RegisterPage = () => {
   };
 
   return (
-    <AuthLayout title="Register">
+    <AuthLayout title="Registrate">
       <form
         onSubmit={handleRegister}
         className="animate__animated animate__fadeIn animate__faster"
@@ -66,7 +66,7 @@ export const RegisterPage = () => {
             <TextField
               label="Email"
               type="email"
-              placeholder="Journal@gmail.com"
+              placeholder="lchirione@gmail.com"
               fullWidth
               name="email"
               value={email}
@@ -81,7 +81,7 @@ export const RegisterPage = () => {
             <TextField
               label="Name"
               type="text"
-              placeholder="Name"
+              placeholder="Ingrese su nombre"
               fullWidth
               name="displayName"
               value={displayName}
@@ -96,7 +96,7 @@ export const RegisterPage = () => {
             <TextField
               label="Password"
               type="password"
-              placeholder="Password"
+              placeholder="Ingrese su contraseña"
               fullWidth
               name="password"
               value={password}
@@ -119,7 +119,7 @@ export const RegisterPage = () => {
                 variant="contained"
                 fullWidth
               >
-                Register
+                Registrarme
               </Button>
             </Grid>
           </Grid>
@@ -130,7 +130,7 @@ export const RegisterPage = () => {
               to="/auth/login"
               sx={{ cursor: "pointer" }}
             >
-              You have an account?
+              Ya tenes cuenta?
             </Link>
           </Grid>
         </Grid>

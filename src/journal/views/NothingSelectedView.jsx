@@ -23,7 +23,7 @@ export const NothingSelectedView = () => {
 
       <Grid item xs={12}>
         <Typography color="white" variant="h5" align="center">
-          Select or add an entry
+        Seleccione o agregue una nota
         </Typography>
       </Grid>
     </Grid>

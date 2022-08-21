@@ -65,7 +65,7 @@ export const Sidebar = ({ drawerWidth = 240 }) => {
           {notes.length !== 0 ? (
             notes.map((note) => <SidebarItem key={note.id} {...note} />)
           ) : (
-            <p className="no-note">No notes</p>
+            <p className="no-note">No hay notas</p>
           )}
         </List>
       </Drawer>
